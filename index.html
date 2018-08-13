@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MusicNation</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!-- Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+</head>
+<!-- Mobile First Design -->
+<body>
+	<header id="header">
+		<div id="logo"><a href="#">MusicNation</a></div>
+	</header>
+<!-- Grid system applied to main at 98px+ -->
+	<div class="main grid">
+
+	
+
+
+	<section id="mainSlider" class="wrap">
+		<div class="slides">
+
+			<div class="slide slide1">
+				<div class="slide-content">
+					<span>MN</span>
+				</div>
+			</div>	
+
+			<div class="slide slide2">
+				<div class="slide-content">
+					<span>MN</span>
+				</div>
+			</div>	
+
+
+			<div class="slide slide3">
+				<div class="slide-content">
+					<span>MN</span>
+				</div>
+			</div>	
+
+
+			<div class="slide slide4">
+				<div class="slide-content">
+					<span>MN</span>
+				</div>
+			</div>
+
+	<div class="selectSlide" style="text-align: center;">
+		<span class="dots" onclick="currentSlide(1)"></span>
+		<span class="dots" onclick="currentSlide(2)"></span>
+		<span class="dots" onclick="currentSlide(3)"></span>
+		<span class="dots" onclick="currentSlide(4)"></span>
+	</div>
+	
+
+
+		</div>
+			
+	</section>
+
+
+
+
+	<section id="newsLetter">
+		<h3>Join The Nation</h3>
+		<h1>Sign Up For Our NewsLetter</h1>
+		<form id="newsLetterSubmit">
+			<input class="field" type="text" id="name" placeholder="Enter your name">
+			<br>
+			<div class="error" id="nameCheck"></div>
+			<input class="field" type="email" id="email" placeholder="Enter your email">
+			<br>
+			<div class="error" id="emailCheck"></div>	
+			<div id="termsCheck"></div>
+			<input type="submit">
+			<br>
+			<label name="terms">Agree to our <a href="#">terms.</a>
+			</label>
+			<input type="checkbox" id="terms" name="terms">
+		</form>
+	</section>
+
+	
+		
+	</div>
+
+	<div class="btn">
+		<span id="pausePlay"><i class="fas fa-play"></i></span>	
+</div>
+
+	
+
+
+
+
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
