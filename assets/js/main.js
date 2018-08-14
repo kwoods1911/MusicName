@@ -1,5 +1,4 @@
 //Automatic Slider
-
 var slideIndex =1;
 
 showImage(slideIndex);
@@ -15,7 +14,6 @@ function currentSlide(n){
 
 
 function showImage(n){
-	// var slide = document.getElementsByClassName("slide");
 	var slide = $(".slide");
 	var dots = document.getElementsByClassName("dots");
 
@@ -57,14 +55,14 @@ function autoSlide(){
 
 
 // Form Validation
-
 var $formSubmit =$('#newsLetterSubmit');
 var message1 = $('#nameCheck');
 var message2 = $('#emailCheck');
+
 function validateUsername(){
 	var name = $('#name').val();
 	if(name===''){
-		message1.html('<p>Field must be filed!</p>');
+		message1.html('<p>Field must be completed!</p>');
 	}else{
 		message1.html('<p>Cool Name!</p>');
 	}	
@@ -73,9 +71,9 @@ function validateUsername(){
 
 function validateEmail(){
 	var email = $('#email').val();
-	console.log(email)
-	if(name===' '){
-		message2.html('<p>Field must be entered!</p>');
+	console.log(email);
+	if(email===''){
+		message2.html('<p>Field must be completed!</p>');
 	}else{
 		message2.html('<p>Thank You!</p>');
 	}
@@ -90,6 +88,38 @@ $formSubmit.on('submit',function(e){
 	e.preventDefault();
 	validateForm();
 })
+
+// Pause Play Button
+var button = $('#pausePlay');
+ button.click(function(){
+ 	$(this).toggleClass('play pause');
+ });
+
+
+ var audio = document.getElementById('audio');
+ var isPlaying = false;
+
+ function togglePlay(){
+ 	if(isPlaying){
+ 		audio.pause();
+ 	}else{
+ 		audio.play();
+ 	}
+ };
+
+ audio.onplaying = function(){
+ 	isPlaying = true;
+ };
+
+ audio.onpause = function(){
+ 	isPlaying = false;
+ };
+
+button.on('click',togglePlay);
+
+
+
+
 
 
 

@@ -108,12 +108,13 @@ span{
 
 }
 .active.dots{
-	background-color: #fff;
+	/*background-color: #fff;*/
+	/*border:2px solid #fc4445;*/
 }
 
 .active,.dots:hover{
 			background-color: #fff;
-			border:2px solid #fc4445;
+			/*border:2px solid #fc4445;*/
 		}
 
 
@@ -152,23 +153,35 @@ cursor: pointer;
 }
 
 #pausePlay:hover{
-	background-color: #333;
 	color:#fff;
 	transition: .6s;
 }
 
-#pausePlay{
-	color:#fff;
-	text-align: center;
-	background-color: #fc4445;
-	border-radius:50%;
-	position: absolute;
-	left:45%;
-	bottom:360px;
+.play{
+	background-image: url('images/play-circle-solid.svg');
 }
 
+.pause{
+	background-image: url('images/pause-circle-regular.svg');
+}
 
+#pausePlay{
+	background-color:#FC4445;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:#fff;
+	text-align: center;
+	border-radius:52%;
+	border:3px solid #FC4445;
+	position: absolute;
+	left:48%;
+	bottom:-20px;
+}
 
+#pausePlay:hover{
+	background-color:#FFF;
+	border:3px solid #FFF;
+}
 #newsLetter{
 	padding:50px 0;
 	margin:0;
@@ -211,6 +224,9 @@ input[type="submit"]:hover{
 /*Tablet styles*/
 
 @media(min-width: 980px){
+	#header{
+		position: relative;
+	}
 	.grid{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -228,13 +244,9 @@ input[type="submit"]:hover{
 	#newsLetter h3{
 		margin: 40px 0;
 	}
-
-
 	#newsLetterSubmit{
 		padding: 50px 0;
 	}
-
-
 	input[type="email"]{
 		margin-bottom:10px;
 	}
@@ -242,16 +254,8 @@ input[type="submit"]:hover{
 		margin: 60px 0;
 	}
 
-.btn{
-	position: absolute;
-	left:0;
-	right:0;
-	margin:auto;
-	z-index: 4;
-}
 #pausePlay{
 	text-align: center;
-	background-color: #fc4445;
 	border-radius:50%;
 	position: absolute;
 	left:48%;
