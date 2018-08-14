@@ -100,10 +100,11 @@ span{
 	/*insert bg color*/
 }
 .selectSlide{
+	text-align: center;
 	left:0;
 	right:0;
-	bottom:40px;
-	margin:auto;
+	bottom:60px;
+	margin-left: 40px;
 	position: absolute;
 
 }
@@ -123,11 +124,11 @@ width:10px;
 height:10px;
 display: inline-block;
 background-color: #FC4445;
-padding:5px;
-margin:0 8px;
+padding:8px;
+margin:0 10px;
 border-radius:50%;
 cursor: pointer;
-		}
+}
 
 
 /*
@@ -174,7 +175,8 @@ cursor: pointer;
 	border-radius:52%;
 	border:3px solid #FC4445;
 	position: absolute;
-	left:48%;
+	left:50%;
+	margin:auto;
 	bottom:-20px;
 }
 
@@ -258,7 +260,7 @@ input[type="submit"]:hover{
 	text-align: center;
 	border-radius:50%;
 	position: absolute;
-	left:48%;
+	left:-25px;
 	bottom:160px;
 }
 
