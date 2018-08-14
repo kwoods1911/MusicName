@@ -48,6 +48,7 @@ function autoSlide(){
 	};
 	if(slideIndex> slide.length){slideIndex=1};
 	slide[slideIndex-1].style.display = "block";
+	// slide[slideIndex-1].fadeIn();
 	slideIndex++;
 	setTimeout(autoSlide,9000)
 }

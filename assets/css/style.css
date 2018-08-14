@@ -12,23 +12,57 @@ body, .slides, .wrap, .slide-content{
 	position:absolute;
 	z-index:4;
 	height:50px;
-	background-color: rgba(252,68,69,0.8);
+	background-color: rgba(252,68,69,0.3);
 	text-align: center;
 	width: 100%;
 	border-bottom:2px solid #333;
 }
 #logo{
+	position: absolute;
+	left:0;
+	top:0;
+		text-align: left;
 		margin:0px 10px;
 		padding:5px 0;
 }
 #logo a{
 	text-decoration: none;
 	font-size:2em;
-	text-align:center;
-	color:#333;
+	color:#fff;
 	border-radius:5px;
 	padding:10px 5px;
+	font-family: 'Playfair Display SC', serif;
 }
+
+#mobileNav ul{
+	margin-top:0;
+	padding:0;
+	margin-left: 50%;
+}
+
+#mobileNav ul li{
+	display: inline-block;
+	padding:10px 8px;
+	text-align: right;	
+}
+#mobileNav li {
+	margin:5px 0;
+}
+#mobileNav li a{
+	color:#fff;
+	text-decoration: none;
+}
+
+/*Hover*/
+#mobileNav li:hover{
+	border-radius:5px;
+	background-color: #FC4445;
+	transition: .5s;
+}
+
+#desktopNav{
+		display: none;
+	}
 #mainSlider{
 	text-align: center;
 }
@@ -115,7 +149,6 @@ span{
 
 .active,.dots:hover{
 			background-color: #fff;
-			/*border:2px solid #fc4445;*/
 		}
 
 
@@ -227,8 +260,32 @@ input[type="submit"]:hover{
 
 @media(min-width: 980px){
 	#header{
-		position: relative;
+		display:none;
 	}
+
+
+	#desktopNav{
+		display: block;
+		position: absolute;
+		z-index: 5;
+		right:30px;
+	}
+
+	#desktopNav li{
+		display: inline;
+		padding:10px 8px;	
+	}
+	#desktopNav li:hover{
+		background-color: #FC4445;
+		border-radius:5px;
+		transition: .5s;
+	}
+	#desktopNav a{
+		color:#fff;
+		text-decoration: none;
+	}
+
+
 	.grid{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -263,5 +320,14 @@ input[type="submit"]:hover{
 	left:-25px;
 	bottom:160px;
 }
+
+
+#logo a{
+	color:#333;
+	padding:10px;
+	transition: .8s;	
+}
+
+
 
 }
