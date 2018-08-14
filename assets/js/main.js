@@ -98,7 +98,6 @@ var button = $('#pausePlay');
 
  var audio = document.getElementById('audio');
  var isPlaying = false;
-
  function togglePlay(){
  	if(isPlaying){
  		audio.pause();
@@ -106,15 +105,12 @@ var button = $('#pausePlay');
  		audio.play();
  	}
  };
-
  audio.onplaying = function(){
  	isPlaying = true;
  };
-
  audio.onpause = function(){
  	isPlaying = false;
  };
-
 button.on('click',togglePlay);
 
 

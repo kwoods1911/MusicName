@@ -175,7 +175,7 @@ cursor: pointer;
 	border:3px solid #FC4445;
 	position: absolute;
 	left:48%;
-	bottom:;
+	bottom:-20px;
 }
 
 #pausePlay:hover{
