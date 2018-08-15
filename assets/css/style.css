@@ -133,6 +133,26 @@ span{
 	background-color: rgba(20,10,4,.7);
 	/*insert bg color*/
 }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
 .selectSlide{
 	text-align: center;
 	left:0;
@@ -141,10 +161,6 @@ span{
 	margin-left: 40px;
 	position: absolute;
 
-}
-.active.dots{
-	/*background-color: #fff;*/
-	/*border:2px solid #fc4445;*/
 }
 
 .active,.dots:hover{
