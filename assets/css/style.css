@@ -137,13 +137,13 @@ span{
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 7s;
   animation-name: fade;
-  animation-duration: 3s;
+  animation-duration: 5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .8} 
   to {opacity: 1}
 }
 
@@ -179,21 +179,6 @@ border-radius:50%;
 cursor: pointer;
 }
 
-
-/*
-.button{
-	/*background-color: #FC4445;
-	text-align: center;
-	position:absolute;
-	left:0;
-	right:0;
-	margin:auto;
-	z-index: 4;
-	/*border-radius:50%;
-}
-
-*/
-
 .btn{
 	position: absolute;
 	left:0;
@@ -208,31 +193,31 @@ cursor: pointer;
 }
 
 .play{
-	background-image: url('images/play-circle-solid.svg');
+	/*background-image: url('images/play-circle-solid.svg');*/
+	background-image: url('images/play.png');
 }
 
 .pause{
-	background-image: url('images/pause-circle-regular.svg');
+	background-image: url('images/pause1.png');
 }
 
 #pausePlay{
 	background-color:#FC4445;
+
 	background-size: cover;
 	background-repeat: no-repeat;
-	color:#fff;
 	text-align: center;
 	border-radius:52%;
-	border:3px solid #FC4445;
 	position: absolute;
 	left:50%;
 	margin:auto;
 	bottom:-20px;
 }
 
-#pausePlay:hover{
+/*#pausePlay:hover{
 	background-color:#FFF;
 	border:3px solid #FFF;
-}
+}*/
 #newsLetter{
 	padding:50px 0;
 	margin:0;
@@ -266,9 +251,10 @@ input[type="submit"]:hover{
 	cursor: pointer;
 }
 
-.error p{
+.message p{
 	margin:0;
 	padding: 0;
+	color:red;
 }
 
 

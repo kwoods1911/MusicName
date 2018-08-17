@@ -72,12 +72,12 @@ function validateUsername(){
 
 function validateEmail(){
 	var email = $('#email').val();
-	console.log(email);
 	if(email===''){
 		message2.html('<p>Field must be completed!</p>');
 	}else{
 		message2.html('<p>Thank You!</p>');
 	}
+	return email;
 }
 
 function validateForm(){
