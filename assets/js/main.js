@@ -39,6 +39,7 @@ function showImage(n){
 
 
 
+
 autoSlide();
 function autoSlide(){
 	var slide = document.getElementsByClassName("slide");
@@ -46,43 +47,38 @@ function autoSlide(){
 	for(var i= 0; i<slide.length; i++){
 		slide[i].style.display = "none";
 	};
+
+
 	if(slideIndex> slide.length){slideIndex=1};
 	slide[slideIndex-1].style.display = "block";
-	// slide[slideIndex-1].fadeIn();
 	slideIndex++;
-	setTimeout(autoSlide,9000)
+	setTimeout(autoSlide,9000);
+
+
 }
 
 
 
 // Form Validation
 var $formSubmit =$('#newsLetterSubmit');
-var message1 = $('#nameCheck');
-var message2 = $('#emailCheck');
+var message1 = $('#formCheck');
+var message2 = $('#formMessage');
 
-function validateUsername(){
-	var name = $('#name').val();
-	if(name===''){
-		message1.html('<p>Field must be completed!</p>');
-	}else{
-		message1.html('<p>Cool Name!</p>');
-	}	
-}
-
-
-function validateEmail(){
-	var email = $('#email').val();
-	if(email===''){
-		message2.html('<p>Field must be completed!</p>');
-	}else{
-		message2.html('<p>Thank You!</p>');
-	}
-	return email;
-}
 
 function validateForm(){
-validateUsername();
-validateEmail();
+	var name = $('#name').val();
+	var email = $('#email').val();
+
+	if(name==='' || email===''){
+		message1.html('<p>Both forms must be completed!</p>');
+	}else{
+		$formSubmit.fadeOut(1000,function(){
+			var submitted = message2.html('<p>Thank you!</p>');
+			submitted.fadeIn(2000);
+		});
+		
+	}
+
 }
 
 $formSubmit.on('submit',function(e){
