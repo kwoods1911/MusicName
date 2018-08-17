@@ -188,17 +188,14 @@ cursor: pointer;
 	z-index: 4;
 }
 
-#pausePlay:hover{
-	color:#fff;
-	transition: .6s;
-}
+
 
 .play{
-	background-image: url('images/play.png');
+	background-image: url('images/final.png');
 }
 
 .pause{
-	background-image: url('images/pause1.png');
+	background-image: url('images/pausebars.png');
 }
 
 #pausePlay{
@@ -211,6 +208,11 @@ cursor: pointer;
 	left:50%;
 	margin:auto;
 	bottom:-20px;
+}
+
+#pausePlay:hover{
+	color:#fff;
+	transition: .6s;
 }
 
 #newsLetter{
