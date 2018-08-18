@@ -191,7 +191,7 @@ cursor: pointer;
 
 
 .play{
-	background-image: url('images/final.png');
+	background-image: url('images/solid-white-play-btn.png');
 }
 
 .pause{
@@ -205,9 +205,13 @@ cursor: pointer;
 	text-align: center;
 	border-radius:52%;
 	position: absolute;
-	left:50%;
+	left:45%;
+	/*right:50%;*/
 	margin:auto;
 	bottom:-20px;
+	/*padding:25px;*/
+	height:10px;
+	width: 10px;
 }
 
 #pausePlay:hover{
@@ -228,10 +232,17 @@ cursor: pointer;
 	width:60%;
 	padding:3px 15px;
 	margin:5px;
+	border:3px solid rgba(252,68,69,0);
 }
 
-input.field:focus{
-	border:1px solid #fc4445;
+input[type="text"]:focus{
+	border:3px solid #fc4445;
+	transition: .6s;
+}
+
+input[type="email"]:focus{
+	border:3px solid #fc4445;
+	transition: .6s;
 }
 
 input[type="submit"]{
@@ -246,6 +257,8 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
 	cursor: pointer;
+	background-color: #FC4445;
+	transition: .6s;
 }
 
 .message p{

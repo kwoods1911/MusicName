@@ -113,6 +113,16 @@ button.on('click',togglePlay);
 
 
 
+//ON PAGE LOAD NAME FIELD WITH BE FOCUSED
+var autoFocus = document.getElementById('name');
+
+function initSetup(){
+	autoFocus.focus();
+}
+
+window.addEventListener('load',initSetup,false);
+
+
 
 
 
