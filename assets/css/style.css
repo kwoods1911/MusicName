@@ -191,25 +191,25 @@ cursor: pointer;
 
 
 .play{
-	background-image: url('images/solid-white-play-btn.png');
+	background-image: url('images/play.png');
+
 }
 
 .pause{
-	background-image: url('images/pausebars.png');
+	background-image: url('images/pause.png');
 }
 
 #pausePlay{
 	background-color:#FC4445;
-	background-size: cover;
+	background-size: auto;
+	background-position: center;
 	background-repeat: no-repeat;
 	text-align: center;
 	border-radius:52%;
 	position: absolute;
 	left:45%;
-	/*right:50%;*/
 	margin:auto;
 	bottom:-20px;
-	/*padding:25px;*/
 	height:10px;
 	width: 10px;
 }
