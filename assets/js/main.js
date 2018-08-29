@@ -70,7 +70,7 @@ function validateForm(){
 	var email = $('#email').val();
 
 	if(name==='' || email===''){
-		message1.html('<p>Both forms must be completed!</p>');
+		message1.html('<p>Both fields must be completed!</p>');
 	}else{
 		$formSubmit.fadeOut(1000,function(){
 			var submitted = message2.html('<p>Thank you!</p>');
@@ -85,6 +85,40 @@ $formSubmit.on('submit',function(e){
 	e.preventDefault();
 	validateForm();
 })
+
+
+//On focusout validate each text field.
+var email = $('#email');
+var nameCheck = $('#nameCheck');
+var emailCheck = $('#emailCheck');
+
+
+$('#name').on('focusout',function(){
+	var nameInput = $('#name').val();
+	if(nameInput ===''){
+		nameCheck.html('<p>Field is required !</p>');
+	}	
+})
+
+
+email.on('focusout',function(){
+	var emailInput = $('#email').val();
+	if(emailInput ===''){
+		emailCheck.html('<p>Field is required !</p>');
+	}
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Pause Play Button
 var button = $('#pausePlay');
@@ -114,13 +148,13 @@ button.on('click',togglePlay);
 
 
 //ON PAGE LOAD NAME FIELD WITH BE FOCUSED
-var autoFocus = document.getElementById('name');
+// var autoFocus = document.getElementById('name');
 
-function initSetup(){
-	autoFocus.focus();
-}
+// function initSetup(){
+// 	autoFocus.focus();
+// }
 
-window.addEventListener('load',initSetup,false);
+// window.addEventListener('load',initSetup,false);
 
 
 

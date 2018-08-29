@@ -81,18 +81,18 @@ body, .slides, .wrap, .slide-content{
 }
 
 .slide1{
-	background-image: url(images/slide_1.jpeg)
+	background-image: url(images/slide_5.jpg)
 }
 
 .slide2{
 	background-image: url(images/slide_2.jpeg)
 }
 .slide3{
-	background-image: url(images/slide_3.jpeg)
+	background-image: url(images/slide_6.jpg)
 }
 
 .slide4{
-	background-image: url(images/slide_4.jpg)
+	background-image: url(images/slide_7.jpg)
 }
 .slide-content{
 	display: flex;
@@ -268,9 +268,14 @@ input[type="submit"]:hover{
 	text-decoration: underline;
 }
 
+
 #formMessage{
 	color:#333;
 	display: none;
+}
+
+.accepted{
+	font-size: 2em;
 }
 
 
